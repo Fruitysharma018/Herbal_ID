@@ -1,0 +1,18 @@
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Uploads
+uploads/
+
+# Environment
+.env
+
+# Vite
+dist/
