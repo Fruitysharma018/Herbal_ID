@@ -65,7 +65,7 @@ function App() {
           Logout
         </button>
 
-        <h1>🌿 Leaf Identification System</h1>
+        <h1>🌿 Herbal ID</h1>
         <p className="subtitle">
           Upload a leaf image to identify plant health and disease
         </p>
