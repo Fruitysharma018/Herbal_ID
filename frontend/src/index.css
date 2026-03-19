@@ -1,0 +1,118 @@
+/* ---------- Global Styles ---------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* ---------- Page Layout ---------- */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Main Container ---------- */
+.container {
+  background: white;
+  padding: 30px;
+  width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Headings ---------- */
+h1 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* ---------- Upload Section ---------- */
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  padding: 10px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* ---------- Errors ---------- */
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* ---------- Result Card ---------- */
+.result-card {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e8f5e9;
+  border-radius: 8px;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+/* ---------- LOGIN PAGE ---------- */
+.login-container {
+  width: 360px;
+  margin: 120px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  width: 100%;
+}
+
+.medicine-box {
+  background: #ffffff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #2e7d32;
+}
+
+.result-card hr {
+  margin: 15px 0;
+}
