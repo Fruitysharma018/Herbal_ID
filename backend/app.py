@@ -5,6 +5,7 @@ from utils.predict import predict_leaf
 import sqlite3
 import os
 
+
 # ------------------ APP SETUP ------------------
 app = Flask(__name__)
 CORS(app)
@@ -14,6 +15,7 @@ UPLOAD_FOLDER = "uploads"
 DB_NAME = "database.db"
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
 
 # ------------------ DATABASE UTILS ------------------
 def get_db():
@@ -100,6 +102,7 @@ def init_db():
 
 init_db()
 
+
 # ------------------ AUTH ROUTES ------------------
 @app.route("/auth/signup", methods=["POST"])
 def signup():
@@ -149,6 +152,7 @@ def login():
         })
 
     return jsonify({"error": "Invalid credentials"}), 401
+
 
 # ------------------ LEAF IDENTIFICATION ------------------
 @app.route("/identify", methods=["POST"])
@@ -209,6 +213,7 @@ def identify():
         ]
     })
 
+
 # ------------------ HISTORY ------------------
 @app.route("/history/<int:user_id>")
 def history(user_id):
@@ -240,11 +245,14 @@ def history(user_id):
     ]
 })
 
+
 # ------------------ ROOT ------------------
 @app.route("/")
 def home():
     return "Leaf Identification Backend Running ✅"
 
+
 # ------------------ RUN ------------------
 if __name__ == "__main__":
     app.run(debug=True)
+
